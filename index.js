@@ -102,7 +102,7 @@
 			ctx.drawImage(oImg,0,0,oImg.width,oImg.height);
 
 			self.canvasUrl=self.oCanvas.toDataURL();
-			self.dropImgOnLoad ? self.dropImgOnLoad() : ''
+			self.dropImgOnLoad ? self.dropImgOnLoad(self.canvasUrl) : ''
 
 		}
 		
