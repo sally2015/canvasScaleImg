@@ -8,7 +8,7 @@
     
 	dragoverFn ： 拖拽在目标框上的回调函数
 		
-	  dragleaveFn ：拖拽离开目标框的回调函数
+	dragleaveFn ：拖拽离开目标框的回调函数
 	  
 	dropFn ：释放目标框上的回调函数
 	
