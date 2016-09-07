@@ -34,9 +34,9 @@
 					console.log('errorMsg');
 				},
 				maxWidth:300,
-				dropImgOnLoad:function(){
+				dropImgOnLoad:function(src){
 					var img = document.createElement('img');
-					img.src = s.canvasUrl;
+					img.src = src;
 					document.body.appendChild(img);
 				}
 
