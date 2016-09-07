@@ -15,7 +15,7 @@
 	<script src="index.js"></script>
 	<script type="text/javascript">
 		
-		new ScaleImg({
+		var s=new ScaleImg({
 			 	dropTargetId : "targetDrop",
 		 		canvasId :"canvas",
 				dragenterFn :function(){
@@ -28,14 +28,21 @@
 					console.log('leave');
 				},
 				dropFn:function(){
-					console.log('drop');
+					
 				},
 				errorMsg:function(){
 					console.log('errorMsg');
 				},
-				maxWidth:300
+				maxWidth:300,
+				dropImgOnLoad:function(){
+					var img = document.createElement('img');
+					img.src = s.canvasUrl;
+					document.body.appendChild(img);
+				}
 
 		});
+
+
 
 	</script>
 </body>
