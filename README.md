@@ -3,6 +3,8 @@
 # canvasScaleImg
 
 利用canvas对拖拽进来的图片进行缩小，实现在前端压缩图片的功能
+	dropTargetId :drop框，文件拖拽到此处，必填
+	canvasId :必填，通过canvas导出图片，不需要这个元素可以用样式隐藏
 
     	dragenterFn  : 拖拽进入目标框时的回调函数
     
